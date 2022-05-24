@@ -1,0 +1,103 @@
+/* RESET CSS */
+body, p, h1, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 90%;
+}
+
+/* GRID */
+.container {
+    display: grid;
+    grid-template-columns: minmax(160px, 1fr) 1fr;
+    grid-template-areas:
+        "header header"
+        "content content"
+        "footer footer";
+    background: linear-gradient(#141e30, #243b55);
+}
+
+/* HEADER */
+.header {
+    grid-area: header;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 20px;
+    transform: 0.2s;
+}
+
+.logo-link {
+    text-decoration: underline;
+    color: black;
+}
+
+.header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header nav a {
+    display: block;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.header nav a:hover {
+    border-bottom: 1px solid black;
+}
+
+.header li + li {
+    margin-left: 20px;
+}
+
+.logo {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* MAIN */
+.content {
+    grid-area: content;
+    color: white;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.image {
+    padding: 30px;
+}
+
+.text {
+    padding: 20px;
+}
+
+/* FOOTER */
+.footer {
+    grid-area: footer;
+    background: white;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    line-height: 1.1rem;
+    letter-spacing: 1.1;
+}
