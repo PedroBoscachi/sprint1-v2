@@ -1,17 +1,5 @@
-.container {
-    display: grid;
-    grid-template-areas:
-        "header"
-        "content"
-        "footer";
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-    background: linear-gradient(#000428, #004e92);
-}
-
 /* HEADER */
 .header {
-    grid-area: header;
     background: white;
     display: flex;
     justify-content: space-between;
@@ -38,7 +26,7 @@
     padding: 0 .2rem;
 }
 
-.header li + li {
+.header li+li {
     margin-left: 1.2rem;
 }
 
@@ -57,18 +45,17 @@ header a:after {
     transition: 0.3s;
 }
 
-nav > ul > li a:hover:after {
+nav>ul>li a:hover:after {
     width: 100%;
 }
 
 /* MAIN */
 .content {
-    grid-area: content;
+    background: linear-gradient(#000428, #004e92);
+    height: 300vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 100%;
-    height: 100%;
     padding: 1rem 0;
 }
 
@@ -76,64 +63,73 @@ nav > ul > li a:hover:after {
 .card {
     margin: 1rem 0;
     width: 28%;
-    height: 80%;
+    height: 30%;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 45% 45% 10%;
-    grid-template-areas: 
-        "image" 
-        "text" 
+    grid-template-areas:
+        "image"
+        "text"
         "stats";
     text-align: center;
     background: white;
     color: black;
     border-radius: 2rem;
-    box-shadow: .8rem .8rem 1.2rem rgba(0,0,0,0.9);
+    box-shadow: .8rem .8rem 1.2rem rgba(0, 0, 0, 0.9);
 }
 
 .card-1 {
     background-image: url(../images/the-last-of-us.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .card-2 {
     background-image: url(../images/red-dead.1200.webp);
     background-size: cover;
+    background-position: center;
 }
 
 .card-3 {
     background-image: url(../images/Elden-Ring.webp);
     background-size: cover;
+    background-position: center;
 }
 
-.cards-2 .card-1 {
+.card-4 {
     background-image: url(../images/batman.avif);
     background-size: cover;
+    background-position: center;
 }
 
-.cards-2 .card-2 {
+.card-5 {
     background-image: url(../images/halo-reach.webp);
     background-size: cover;
+    background-position: center;
 }
 
-.cards-2 .card-3 {
+.card-6 {
     background-image: url(../images/life.webp);
     background-size: cover;
+    background-position: center;
 }
 
-.cards-3 .card-1 {
+.card-7 {
     background-image: url(../images/god-of-war-3.webp);
     background-size: cover;
+    background-position: center;
 }
 
-.cards-3 .card-2 {
+.card-8 {
     background-image: url(../images/sekiro.jpg);
     background-size: cover;
+    background-position: center;
 }
 
-.cards-3 .card-3 {
+.card-9 {
     background-image: url(../images/cuphead-bg.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .card-image {
@@ -154,7 +150,7 @@ nav > ul > li a:hover:after {
 }
 
 .card-title {
- margin: .5rem .5rem .5rem .2rem;   
+    margin: .5rem .5rem .5rem .2rem;
 }
 
 .card-info {
@@ -187,39 +183,47 @@ nav > ul > li a:hover:after {
     color: #000428;
 }
 
-@media screen and (max-width: 580px) {
-    .container {
-        grid-template-areas:
-        "header"
-        "content"
-        "footer";
+/* RESPONSIVE  */
+
+@media screen and (max-width: 800px) {
+    .card {
+        width: 40%;
+        height: 15%;
     }
-
-}
-
-@media screen and (max-width: 768px) {
-    .container {
-        grid-template-areas:
-        "header"
-        "content"
-        "footer";
+    .card-info {
+        font-size: .8rem;
     }
 }
 
-@media screen and (max-width: 920px) {
-    .container {
-        grid-template-areas:
-        "header header"
-        "content content"
-        "footer footer";
+@media screen and (max-width: 600px) {
+    .content {
+        height: 400vh;
+    }
+    .card {
+        width: 80%;
+        height: 9%;
+    }
+    .footer {
+        font-size: 1rem;
+    }
+    .footer-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .card-title {
+        font-size: 1rem;
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .container {
-        grid-template-areas:
-        "header header"
-        "content content"
-        "footer footer";
+@media screen and (max-width: 300px) {
+    .footer {
+        font-size: .9rem;
+    }
+    .card-title {
+        font-size: .9rem;
+    }
+    .card-info {
+        font-size: .7rem;
     }
 }
