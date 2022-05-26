@@ -49,7 +49,27 @@ nav>ul>li a:hover:after {
     width: 100%;
 }
 
-/* MAIN */
+/* MAIN */ 
+.content {
+    padding: 3rem 8rem;
+    background: linear-gradient(#000428, #004e92);
+    color: white;
+}
+
+.content h2 {
+    text-align: center;
+    padding: 0 0 1rem 0;
+    color: rgb(250, 234, 234);
+}
+
+.content p {
+    font-size: 1.4rem;
+}
+
+.valores p {
+    margin-bottom: 1.5rem;
+}
+
 
 /* FOOTER */
 .footer {
