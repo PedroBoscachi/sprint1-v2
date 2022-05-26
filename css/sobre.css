@@ -49,15 +49,18 @@ nav>ul>li a:hover:after {
     width: 100%;
 }
 
-/* MAIN */ 
+/* MAIN */
 .content {
     padding: 3rem 8rem;
     background: linear-gradient(#000428, #004e92);
     color: white;
 }
 
+.content img {
+    margin-bottom: 1rem;
+}
+
 .content h2 {
-    text-align: center;
     padding: 0 0 1rem 0;
     color: rgb(250, 234, 234);
 }
@@ -68,6 +71,15 @@ nav>ul>li a:hover:after {
 
 .valores p {
     margin-bottom: 1.5rem;
+}
+
+.valores {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.valores-title {
+    width: 100%;
 }
 
 
@@ -90,4 +102,35 @@ nav>ul>li a:hover:after {
 
 .footer-logo {
     color: #000428;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    img {
+        width: 80%;
+    }
+    .content {
+        padding: 3rem 4rem;
+    }
+    .footer {
+        font-size: 1rem;
+    }
+    .footer-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .content {
+        padding: 3rem 2rem;
+        font-size: .9rem;
+    }
+    .valores p {
+        font-size: 1rem;
+    }
+    img {
+        width: 60%;
+    }
 }
