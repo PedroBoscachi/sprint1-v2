@@ -52,7 +52,7 @@ nav>ul>li a:hover:after {
 /* MAIN */
 .content {
     background: linear-gradient(#000428, #004e92);
-    height: 300vh;
+    height: 200vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -185,13 +185,26 @@ nav>ul>li a:hover:after {
 
 /* RESPONSIVE  */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .card {
         width: 40%;
-        height: 15%;
+        height: 18%;
     }
     .card-info {
         font-size: .8rem;
+    }
+    .card-title {
+        margin: .4rem .4rem .3rem .1rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .content {
+        height: 400vh;
+    }
+    .card {
+        width: 70%;
+        height: 10%;
     }
 }
 
@@ -219,11 +232,12 @@ nav>ul>li a:hover:after {
 @media screen and (max-width: 300px) {
     .footer {
         font-size: .9rem;
+        padding: 1.1rem;
     }
     .card-title {
         font-size: .9rem;
     }
     .card-info {
-        font-size: .7rem;
+        font-size: .8rem;
     }
 }

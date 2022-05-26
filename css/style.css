@@ -145,7 +145,7 @@ nav > ul > li a:hover:after {
     .image-3 {
         order: 6;
     }
-
+    
     .image {
         display: flex;
         align-self: center;
