@@ -69,16 +69,16 @@ nav>ul>li a:hover:after {
     font-size: 1.4rem;
 }
 
-.valores p {
+.values p {
     margin-bottom: 1.5rem;
 }
 
-.valores {
+.values {
     display: flex;
     flex-wrap: wrap;
 }
 
-.valores-title {
+.values-title {
     width: 100%;
 }
 
@@ -127,7 +127,7 @@ nav>ul>li a:hover:after {
         padding: 3rem 2rem;
         font-size: .9rem;
     }
-    .valores p {
+    .values p {
         font-size: 1rem;
     }
     img {
