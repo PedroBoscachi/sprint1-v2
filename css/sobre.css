@@ -9,7 +9,6 @@
 }
 
 .logo-link {
-    text-decoration: underline;
     color: #000428;
 }
 
@@ -53,7 +52,7 @@ nav>ul>li a:hover:after {
 .content {
     padding: 3rem 8rem;
     background: linear-gradient(#000428, #004e92);
-    color: white;
+    color: #F8FFF4;
 }
 
 .content img {
