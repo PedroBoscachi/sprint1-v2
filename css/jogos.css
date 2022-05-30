@@ -19,7 +19,7 @@
     grid-template-areas:
         "image"
         "text"
-        "stats";
+        "year";
     text-align: center;
     background-color: white;
     color: black;
@@ -91,8 +91,8 @@
     grid-area: text;
 }
 
-.card-stats {
-    grid-area: stats;
+.card-year {
+    grid-area: year;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,6 +109,19 @@
 
 .card:hover {
     transform: scale(1.1);
+    /*animation-name: cardAnimation;
+    animation-duration: .5s;
+    animation-timing-function: ease;*/
+
+}
+
+@keyframes cardAnimation {
+    from {
+        
+    }
+    to {
+
+    }
 }
 
 /* FOOTER */
