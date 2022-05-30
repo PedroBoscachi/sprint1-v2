@@ -1,0 +1,99 @@
+/* HEADER */
+.header {
+    grid-area: header;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    transform: 0.2s;
+}
+
+#menu-header {
+    display: flex;
+    gap: 1rem;
+}
+
+.logo-link {
+    color: #000428;
+}
+
+.header nav a {
+    display: block;
+    color: black;
+    font-size: 1.2rem;
+    position: relative;
+    padding: 0 .2rem;
+}
+.logo {
+    color: #000428;
+}
+
+header a:after {
+    content: "";
+    position: absolute;
+    background-color: #004e92;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+nav > ul > li a:hover:after {
+    width: 100%;
+}
+
+#btn {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    #btn {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+    .hamburguer {
+        width: 20px;
+        border-top: 2px solid;
+    }
+    .hamburguer::after, .hamburguer::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: black;
+        margin-top: 5px;
+    }
+    #menu-header {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 4.4rem;
+        right: 0;
+        background: #F8FFF4;
+        opacity: .9;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+    }
+    #nav.active  #menu-header {
+        height: 14rem;
+        visibility: visible;
+    }
+
+    #menu-header a {
+        padding: 1rem 0;
+        margin: 0 1.2rem;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+    }
+    #menu-header a::after {
+        display: none;
+    }
+}

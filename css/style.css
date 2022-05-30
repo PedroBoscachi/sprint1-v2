@@ -13,57 +13,6 @@ img {
     background: linear-gradient(#000428, #004e92);
 }
 
-/* HEADER */
-.header {
-    grid-area: header;
-    background: white;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    transform: 0.2s;
-}
-
-.logo-link {
-    color: #000428;
-}
-
-.header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.header nav a {
-    display: block;
-    color: black;
-    font-size: 1.2rem;
-    position: relative;
-    padding: 0 .2rem;
-}
-
-.header li + li {
-    margin-left: 1.2rem;
-}
-
-.logo {
-    color: #000428;
-}
-
-header a:after {
-    content: "";
-    position: absolute;
-    background-color: #004e92;
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    transition: 0.3s;
-}
-
-nav > ul > li a:hover:after {
-    width: 100%;
-}
-
 /* MAIN */
 .content {
     grid-area: content;
@@ -103,15 +52,12 @@ nav > ul > li a:hover:after {
     color: #000428;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 600px) {
     html {
         overflow-x: hidden;
     }
     img {
-        width: 75%;
-    }
-    .header nav ul {
-        padding: .5rem;
+        width: 80%;
     }
     .container {
         grid-template-areas:
