@@ -60,7 +60,7 @@ label {
 
 .button {
     font-size: 1.1rem;
-    width: 90%;
+    width: 40%;
     padding: .8rem;
     border-radius: .8rem;
     border-color: #000428;
@@ -70,11 +70,18 @@ label {
 .button:hover {
     background-color: #000428;
     color: #FFFFFF;
+    cursor: pointer;
+    animation-name: buttonAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
-.button:hover {
-    cursor: pointer;
-}
+@keyframes buttonAnimation {
+    to {
+        width: 90%;
+    }
+} 
+
 
 /* FOOTER */
 .footer {
