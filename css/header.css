@@ -76,8 +76,7 @@ nav > ul > li a:hover:after {
         width: 100%;
         top: 4.4rem;
         right: 0;
-        background: #F8FFF4;
-        opacity: .9;
+        background: white;
         height: 0px;
         transition: .6s;
         z-index: 1000;
