@@ -27,23 +27,6 @@
 }
 .logo {
     color: #000428;
-    animation-name: logoAnimation;
-    animation-duration: 2s;
-}
-
-@keyframes logoAnimation {
-    25% {
-        border-bottom: 1px solid black;
-    }
-    50% {
-        border-right: 1px solid black;
-    }
-    75% {
-        border-top: 1px solid black;
-    }
-    100%{
-        border-left: 1px solid black;
-    }
 }
 
 header a:after {
