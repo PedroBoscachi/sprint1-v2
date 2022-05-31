@@ -100,11 +100,13 @@
 
 .card-title {
     margin: .5rem .5rem .5rem .2rem;
+    color: #000428;
 }
 
 .card-info {
     padding: 0 1rem;
     font-size: 1rem;
+    font-weight: 500;
 }
 
 .card:hover {
@@ -176,6 +178,12 @@
         width: 70%;
         height: 10%;
     }
+    .card-info {
+        font-weight: 600;
+    }
+    .card-title {
+        font-weight: 700;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -208,6 +216,6 @@
         font-size: .9rem;
     }
     .card-info {
-        font-size: .8rem;
+        font-size: .7rem;
     }
 }
