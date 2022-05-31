@@ -46,7 +46,7 @@
 }
 
 .card-4 {
-    background-image: url(../images/69-Batman-Arkham-City-1.jpg);
+    background-image: url(../images/batman-arkham-knight.webp);
     background-size: cover;
     background-position: center;
 }
@@ -112,7 +112,15 @@
     /*animation-name: cardAnimation;
     animation-duration: .5s;
     animation-timing-function: ease;*/
+}
 
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(350deg);
+    }
 }
 
 @keyframes cardAnimation {
