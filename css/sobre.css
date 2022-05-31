@@ -11,6 +11,7 @@
 
 .content h2 {
     padding: 0 0 1rem 0;
+    width: 100%;
     color: rgb(250, 234, 234);
 }
 
@@ -26,11 +27,6 @@
     display: flex;
     flex-wrap: wrap;
 }
-
-.values-title {
-    width: 100%;
-}
-
 
 /* FOOTER */
 .footer {
