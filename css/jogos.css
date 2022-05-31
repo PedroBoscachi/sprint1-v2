@@ -29,62 +29,46 @@
 
 .card-1 {
     background-image: url(../images/the-last-of-us.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .card-2 {
     background-image: url(../images/red-dead.1200.webp);
-    background-size: cover;
-    background-position: center;
 }
 
 .card-3 {
     background-image: url(../images/Elden-Ring.webp);
-    background-size: cover;
-    background-position: center;
 }
 
 .card-4 {
     background-image: url(../images/batman-arkham-knight.webp);
-    background-size: cover;
-    background-position: center;
 }
 
 .card-5 {
     background-image: url(../images/halo-reach.webp);
-    background-size: cover;
-    background-position: center;
 }
 
 .card-6 {
     background-image: url(../images/life.webp);
-    background-size: cover;
-    background-position: center;
 }
 
 .card-7 {
     background-image: url(../images/god-of-war-3.webp);
-    background-size: cover;
-    background-position: center;
 }
 
 .card-8 {
     background-image: url(../images/sekiro.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .card-9 {
     background-image: url(../images/cuphead-bg.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .card-image {
     grid-area: image;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
+    background-size: cover;
+    background-position: center;
 }
 
 .card-text {
