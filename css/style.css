@@ -17,7 +17,6 @@ img {
 .content {
     grid-area: content;
     color: #F8FFF4;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -96,18 +95,6 @@ img {
         width: 100%;
         padding: .5rem;
     }
-    .footer {
-        font-size: 1.1rem;
-    }
-    .footer-container {
-        width: 100%;
-        display: flex;
-        gap: 1rem;
-        flex-direction: column;
-    }
-    .icon {
-        width: 35%;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -116,9 +103,6 @@ img {
         "header"
         "content"
         "footer";
-    }
-    .footer-container p {
-        padding: 1rem;
     }
 }
 

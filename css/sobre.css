@@ -28,27 +28,6 @@
     flex-wrap: wrap;
 }
 
-/* FOOTER */
-.footer {
-    grid-area: footer;
-    background: white;
-    padding: .4rem;
-    text-align: center;
-    font-size: 1.2rem;
-    line-height: 1.1rem;
-    letter-spacing: 1.1;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.footer-logo {
-    color: #000428;
-}
-
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
     img {
@@ -56,14 +35,6 @@
     }
     .content {
         padding: 3rem 4rem;
-    }
-    .footer {
-        font-size: 1rem;
-    }
-    .footer-container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
     }
 }
 
