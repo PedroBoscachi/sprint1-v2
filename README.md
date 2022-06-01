@@ -6,6 +6,8 @@
 
 <h2>Aplicação</h2>
 
+Link: https://pedroboscachi.github.io/sprint1-v2/
+
 <p>Site estático que possui 4 páginas: Home, Jogos, Sobre e Contato. O usuário pode trocar de página a vontade por meio do menu de navegação presente na parte superior direita da página</p>
 
 <p>Home: Página inicial do site, nela é mostrado pequenos textos sobre o funcionamento da empresa com imagens referentes ao assunto.</p>
@@ -16,7 +18,7 @@
 
 </br>
 
-<p>Jogos: Página com fileiras de Cards que representam um jogo, contendo título, descrição e ano de lançameno do jogo. O usuário pode visualizar as fileiras e os jogos disponíveis.</p>
+<p>Jogos: Página com fileiras de Cards que representam um jogo, contendo título, descrição e ano de lançamento do jogo. O usuário pode visualizar as fileiras e os jogos disponíveis.</p>
 
 </br>
 
