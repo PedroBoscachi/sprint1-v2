@@ -1,7 +1,7 @@
 /* FOOTER */
 .footer {
     grid-area: footer;
-    background: white;
+    background: #FFFFFF;
     padding: .4rem;
     text-align: center;
     font-size: 1.2rem;
@@ -58,7 +58,6 @@
         width: 35%;
     }
 }
-
 
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {

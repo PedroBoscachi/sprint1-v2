@@ -30,7 +30,6 @@ img {
     padding: 1rem ;
 }
 
-
 /* RESPONSIVE */
 @media screen and (max-width: 600px) {
     html {
@@ -70,7 +69,6 @@ img {
     .image-3 {
         order: 6;
     }
-    
     .image {
         display: flex;
         align-self: center;
